@@ -16,6 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        // Set NavBar appearance
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().barStyle = UIBarStyle.Black
+        UINavigationBar.appearance().barTintColor = UIColor.lightGrayColor()
+        UINavigationBar.appearance().translucent = false
+
+        // Initialize NavController
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = mainStoryboard.instantiateViewControllerWithIdentifier("PeopleViewController")
+        let navController = UINavigationController(rootViewController: initialViewController)
+        let frame = UIScreen.mainScreen().bounds
+        window = UIWindow(frame: frame)
+        window!.rootViewController = navController
+        window!.makeKeyAndVisible()
+        
         return true
     }
 

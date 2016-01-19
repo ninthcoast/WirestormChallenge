@@ -8,21 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		36482AEB1C4EB6660033E48D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36482AEA1C4EB6660033E48D /* AppDelegate.swift */; };
-		36482AED1C4EB6660033E48D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36482AEC1C4EB6660033E48D /* ViewController.swift */; };
+		36482AED1C4EB6660033E48D /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36482AEC1C4EB6660033E48D /* PeopleViewController.swift */; };
 		36482AF01C4EB6660033E48D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36482AEE1C4EB6660033E48D /* Main.storyboard */; };
 		36482AF21C4EB6660033E48D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36482AF11C4EB6660033E48D /* Assets.xcassets */; };
 		36482AF51C4EB6660033E48D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36482AF31C4EB6660033E48D /* LaunchScreen.storyboard */; };
+		36482B001C4EBADC0033E48D /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36482AFF1C4EBADC0033E48D /* NetworkController.swift */; };
+		36482B031C4EBB2F0033E48D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36482B021C4EBB2F0033E48D /* Constants.swift */; };
+		36482B061C4EBF990033E48D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36482B051C4EBF990033E48D /* Person.swift */; };
+		36482B0A1C4EC32C0033E48D /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36482B091C4EC32C0033E48D /* PersonTableViewCell.swift */; };
+		36482B0C1C4EC3340033E48D /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36482B0B1C4EC3340033E48D /* PersonTableViewCell.xib */; };
+		36482B0E1C4ECC150033E48D /* ShowFullImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36482B0D1C4ECC150033E48D /* ShowFullImageViewController.swift */; };
 		588054D8FE37A5EA75E121DD /* Pods_WirestormChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8FCD76562DA39A5393700 /* Pods_WirestormChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36482AE71C4EB6660033E48D /* WirestormChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WirestormChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36482AEA1C4EB6660033E48D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36482AEC1C4EB6660033E48D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36482AEC1C4EB6660033E48D /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		36482AEF1C4EB6660033E48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36482AF11C4EB6660033E48D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36482AF41C4EB6660033E48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36482AF61C4EB6660033E48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36482AFF1C4EBADC0033E48D /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		36482B021C4EBB2F0033E48D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		36482B051C4EBF990033E48D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		36482B091C4EC32C0033E48D /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		36482B0B1C4EC3340033E48D /* PersonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
+		36482B0D1C4ECC150033E48D /* ShowFullImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowFullImageViewController.swift; sourceTree = "<group>"; };
 		757949C3278A9D1BF32ACC07 /* Pods-WirestormChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WirestormChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-WirestormChallenge/Pods-WirestormChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		78176C80C5AE00BE104E9073 /* Pods-WirestormChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WirestormChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WirestormChallenge/Pods-WirestormChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		DCA8FCD76562DA39A5393700 /* Pods_WirestormChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WirestormChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,14 +73,68 @@
 		36482AE91C4EB6660033E48D /* WirestormChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				36482AFD1C4EBABB0033E48D /* Controllers */,
+				36482B041C4EBF900033E48D /* Model */,
+				36482B011C4EBB250033E48D /* Utils */,
+				36482B071C4EC3160033E48D /* Views */,
+				36482AFC1C4EBAAF0033E48D /* ViewControllers */,
 				36482AEA1C4EB6660033E48D /* AppDelegate.swift */,
-				36482AEC1C4EB6660033E48D /* ViewController.swift */,
 				36482AEE1C4EB6660033E48D /* Main.storyboard */,
 				36482AF11C4EB6660033E48D /* Assets.xcassets */,
 				36482AF31C4EB6660033E48D /* LaunchScreen.storyboard */,
 				36482AF61C4EB6660033E48D /* Info.plist */,
 			);
 			path = WirestormChallenge;
+			sourceTree = "<group>";
+		};
+		36482AFC1C4EBAAF0033E48D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				36482AEC1C4EB6660033E48D /* PeopleViewController.swift */,
+				36482B0D1C4ECC150033E48D /* ShowFullImageViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		36482AFD1C4EBABB0033E48D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				36482AFF1C4EBADC0033E48D /* NetworkController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		36482B011C4EBB250033E48D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				36482B021C4EBB2F0033E48D /* Constants.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		36482B041C4EBF900033E48D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36482B051C4EBF990033E48D /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		36482B071C4EC3160033E48D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36482B081C4EC31C0033E48D /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		36482B081C4EC31C0033E48D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				36482B091C4EC32C0033E48D /* PersonTableViewCell.swift */,
+				36482B0B1C4EC3340033E48D /* PersonTableViewCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		5FEC1A0AFDB4A33F48E9C489 /* Pods */ = {
@@ -151,6 +217,7 @@
 			files = (
 				36482AF51C4EB6660033E48D /* LaunchScreen.storyboard in Resources */,
 				36482AF21C4EB6660033E48D /* Assets.xcassets in Resources */,
+				36482B0C1C4EC3340033E48D /* PersonTableViewCell.xib in Resources */,
 				36482AF01C4EB6660033E48D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,8 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36482AED1C4EB6660033E48D /* ViewController.swift in Sources */,
+				36482B0A1C4EC32C0033E48D /* PersonTableViewCell.swift in Sources */,
+				36482B061C4EBF990033E48D /* Person.swift in Sources */,
+				36482AED1C4EB6660033E48D /* PeopleViewController.swift in Sources */,
+				36482B0E1C4ECC150033E48D /* ShowFullImageViewController.swift in Sources */,
 				36482AEB1C4EB6660033E48D /* AppDelegate.swift in Sources */,
+				36482B001C4EBADC0033E48D /* NetworkController.swift in Sources */,
+				36482B031C4EBB2F0033E48D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

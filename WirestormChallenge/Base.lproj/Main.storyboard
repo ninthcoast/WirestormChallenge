@@ -1,25 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Show Full Image View Controller-->
+        <scene sceneID="r4s-QA-Pq2">
+            <objects>
+                <viewController storyboardIdentifier="ShowFullImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xlx-9p-aEQ" customClass="ShowFullImageViewController" customModule="WirestormChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AXC-ga-sH0"/>
+                        <viewControllerLayoutGuide type="bottom" id="y7N-Uc-u4k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="isk-yG-VPB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HpE-dn-fR5">
+                                <rect key="frame" x="0.0" y="189" width="375" height="289"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HpE-dn-fR5" secondAttribute="height" multiplier="375:289" id="SNo-oO-XO7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HpE-dn-fR5" secondAttribute="trailing" id="G1v-c4-jkh"/>
+                            <constraint firstItem="HpE-dn-fR5" firstAttribute="centerX" secondItem="isk-yG-VPB" secondAttribute="centerX" id="Yfu-wB-DBx"/>
+                            <constraint firstItem="HpE-dn-fR5" firstAttribute="centerY" secondItem="isk-yG-VPB" secondAttribute="centerY" id="iDO-bm-WJu"/>
+                            <constraint firstItem="HpE-dn-fR5" firstAttribute="leading" secondItem="isk-yG-VPB" secondAttribute="leading" id="sjD-zs-M32"/>
+                            <constraint firstItem="HpE-dn-fR5" firstAttribute="width" secondItem="isk-yG-VPB" secondAttribute="width" id="zq3-VG-UOd"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="HpE-dn-fR5" id="dfW-ul-KvZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8aw-Cb-XGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.5" y="333.5"/>
+        </scene>
+        <!--People View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PeopleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PeopleViewController" customModule="WirestormChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="klK-Ef-Sqd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="klK-Ef-Sqd" secondAttribute="bottom" id="EEo-Xo-uFK"/>
+                            <constraint firstItem="klK-Ef-Sqd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Yos-yA-DuE"/>
+                            <constraint firstItem="klK-Ef-Sqd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z1a-q1-lPW"/>
+                            <constraint firstAttribute="trailing" secondItem="klK-Ef-Sqd" secondAttribute="trailing" id="qJi-Xx-9lO"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="klK-Ef-Sqd" id="Nni-qR-qIV"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="acM-r9-gKc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="337" y="334"/>
         </scene>
     </scenes>
 </document>
